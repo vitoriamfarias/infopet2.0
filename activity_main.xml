@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/segundatela"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ContentDescription">
+
+    <Button
+        android:id="@+id/btnTexto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="111dp"
+        android:layout_marginStart="46dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_red_dark"
+        android:text="Ok"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnCamera"
+        app:layout_constraintEnd_toStartOf="@+id/btnCoordenadas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="384dp"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCoordenadas"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Digite aqui"
+        android:inputType="textAutoCorrect"
+        app:layout_constraintBottom_toTopOf="@+id/btnTexto"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCoordenadas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCoordenadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="110dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="Localização"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTexto"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCoordenadas" />
+
+    <TextView
+        android:id="@+id/textViewCoordenadas"
+        android:layout_width="107dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/btnCoordenadas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="199dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="293dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_red_dark"
+        android:text="Tirar Foto"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTexto" />
+
+</android.support.constraint.ConstraintLayout>
